@@ -82,8 +82,6 @@
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-          
-          <div class="hero-unit">
           <p> This will be the center-point of the work flow.  This section will have most of the key system requirements: 
             <ul>
               <li>Agents at Stores can create requisitions.</li>
@@ -93,123 +91,125 @@
               <li>Explicit cutoff time for placing overnight Requisitions.</li>
             </ul>
           </p>
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Search Orders
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
-                <form action=""> Search Orders: <input type="text" name="srchbx" value=""><input type="submit" value="Submit"></form>
-                <table id="t01" style="width:100%">
-                  <caption>Search Result: Store #104</caption>
-                  <tr>
-                    <th>Order Number</th><th>Status</th><th>Pieces</th><th>Quantity</th>
-                    <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th>
-                    <th>Expedited</th><th>Action</th>
-                  </tr>
-                  <tr>
-                    <td>1234zxcv</td> <td>Delivered</td><td>2</td><td>800</td>
-                    <td>1/1/2013</td><td>1/1/2013</td><td>1/2/2013</td><td>Y</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>2345sdfg</td><td>Approved</td><td>4</td><td>650</td>
-                    <td>12/1/2014</td><td>1/1/2015</td><td></td><td>N</td>
-                    <td><a class="btn" href="#">Revoke</a></td>
-                  </tr>
-                  <tr>
-                    <td>4576xcfg</td><td>Waiting for Approval</td><td>1</td><td>105</td>
-                    <td>1/5/2015</td><td></td><td></td><td>Y</td>
-                    <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
-                  </tr>
-                </table>
-                <br><br>
+          <div class="hero-unit">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Search Orders
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <form action=""> Search Orders: <input type="text" name="srchbx" value=""><input type="submit" value="Submit"></form>
+                    <table id="t01" style="width:100%">
+                      <caption>Search Result: Store #104</caption>
+                      <tr>
+                        <th>Order Number</th><th>Status</th><th>Pieces</th><th>Quantity</th>
+                        <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th>
+                        <th>Expedited</th><th>Action</th>
+                      </tr>
+                      <tr>
+                        <td>1234zxcv</td> <td>Delivered</td><td>2</td><td>800</td>
+                        <td>1/1/2013</td><td>1/1/2013</td><td>1/2/2013</td><td>Y</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>2345sdfg</td><td>Approved</td><td>4</td><td>650</td>
+                        <td>12/1/2014</td><td>1/1/2015</td><td></td><td>N</td>
+                        <td><a class="btn" href="#">Revoke</a></td>
+                      </tr>
+                      <tr>
+                        <td>4576xcfg</td><td>Waiting for Approval</td><td>1</td><td>105</td>
+                        <td>1/5/2015</td><td></td><td></td><td>Y</td>
+                        <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
+                      </tr>
+                    </table>
+                    <br><br>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo">
-              <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                 Place Order 
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
-                <form action="">
-                <fieldset>
-                  Characters<br>
-                  <img src="Img\TDSSB1.jpg" alt="TDS Shopping Bag" height="150" width="150">
-                  Quantity (up to 500):
-                  <input type="number" name="quantity" max="500">
-                  <br><br>
-                  Marvel & Star Wars<br>
-                  <img src="Img\TDSSB2.jpg" alt="TDS Shopping Bag" height="150" width="150">
-                  Quantity (up to 500):
-                  <input type="number" name="quantity" max="500">
-                  <br />
-                  <input type="checkbox" name="Expedited" value="Expedited" />Request Expedited Delivery 
-                  <br><br>
-                  <input type="submit" value="Submit">
-                </fieldset>
-                </form>
-                <p>For Expedited Delivery, it will be calculated at the time the order is submitted, and if it passes the expidite request will show on the approval request.
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Place Order 
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <form action="">
+                    <fieldset>
+                      Characters<br>
+                      <img src="Img\TDSSB1.jpg" alt="TDS Shopping Bag" height="150" width="150">
+                      Quantity (up to 500):
+                      <input type="number" name="quantity" max="500">
+                      <br><br>
+                      Marvel & Star Wars<br>
+                      <img src="Img\TDSSB2.jpg" alt="TDS Shopping Bag" height="150" width="150">
+                      Quantity (up to 500):
+                      <input type="number" name="quantity" max="500">
+                      <br />
+                      <input type="checkbox" name="Expedited" value="Expedited" />Request Expedited Delivery 
+                      <br><br>
+                      <input type="submit" value="Submit">
+                    </fieldset>
+                    </form>
+                    <p>For Expedited Delivery, it will be calculated at the time the order is submitted, and if it passes the expidite request will show on the approval request.
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Your Orders
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
-                  <table id="t01" style="width:100%">
-                  <caption>Orders || Roy White</caption>
-                  <tr>
-                    <th>Order Number</th><th>Location</th><th>Status</th><th>Pieces</th><th>Quantity</th>
-                    <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th><th>Action</th>
-                  </tr>
-                  <tr>
-                    <td>1234zxcv</td><td>Store 104</td><td>Delivered</td><td>2</td><td>200</td>
-                    <td>3/1/2013</td><td>3/4/2013</td><td>3/29/2013<td>
-                    
-                  </tr>
-                  <tr>
-                    <td>2345sdfg</td><td>Store 105</td><td>Approved</td><td>4</td><td>225</td>
-                    <td>6/5/2013</td><td>6/6/2013</td><td></td>
-                    <td><a class="btn" href="#">Revoke</a></td>
-                  </tr>
-                  <tr>
-                    <td>uyxc6543</td><td>Store 104</td><td>Waiting for Approval</td><td>1</td><td>105</td>
-                    <td>1/5/2015</td><td></td><td></td>
-                    <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
-                  </tr>
-                  <tr>
-                    <td>lhfs2548</td><td>Store 112</td><td>Waiting for Approval</td><td>1</td><td>105</td>
-                    <td>1/5/2015</td><td></td><td></td>
-                    <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
-                  </tr>
-                </table>
-                <p> For Approvers with outstanding approvals, the system can bundle them and send them to their owner on a periodic basis.
-                </p>
-                <br><br>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Your Orders
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                      <table id="t01" style="width:100%">
+                      <caption>Orders || Roy White</caption>
+                      <tr>
+                        <th>Order Number</th><th>Location</th><th>Status</th><th>Pieces</th><th>Quantity</th>
+                        <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th><th>Action</th>
+                      </tr>
+                      <tr>
+                        <td>1234zxcv</td><td>Store 104</td><td>Delivered</td><td>2</td><td>200</td>
+                        <td>3/1/2013</td><td>3/4/2013</td><td>3/29/2013<td>
+                        
+                      </tr>
+                      <tr>
+                        <td>2345sdfg</td><td>Store 105</td><td>Approved</td><td>4</td><td>225</td>
+                        <td>6/5/2013</td><td>6/6/2013</td><td></td>
+                        <td><a class="btn" href="#">Revoke</a></td>
+                      </tr>
+                      <tr>
+                        <td>uyxc6543</td><td>Store 104</td><td>Waiting for Approval</td><td>1</td><td>105</td>
+                        <td>1/5/2015</td><td></td><td></td>
+                        <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
+                      </tr>
+                      <tr>
+                        <td>lhfs2548</td><td>Store 112</td><td>Waiting for Approval</td><td>1</td><td>105</td>
+                        <td>1/5/2015</td><td></td><td></td>
+                        <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
+                      </tr>
+                    </table>
+                    <p> For Approvers with outstanding approvals, the system can bundle them and send them to their owner on a periodic basis.
+                    </p>
+                    <br><br>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>          
-      </div>
-    </div><!--/span-->
-  </div><!--/row-->
+            </div>          
+          </div><!--/unit-->
+        </div><!--/span-->
+      </div><!--/row-->
+      
       <hr>
       <footer>
         <p>©Roplast Industries Inc 2015</p>
