@@ -84,68 +84,123 @@
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
-            <form action=""> Search Locations: <input type="text" name="srchbx" value=""><input type="submit" value="Submit"></form>
-            <table id="t01" style="width:100%">
-              <tr>
-                <th>Name</th> <th>Address</th><th>City</th><th>State</th><th>Zip Code</th>
-              </tr>
-              <tr>
-                <td><a html="#">Store #104</a></td>
-                <td>123 Main, Ste 200</td>		
-                <td>NY</td><td>NY</td><td>10001</td>
-                <td><a class="btn" href="#">Remove</a></td>
-              </tr>
-              <tr>
-                <td><a html="#">Store #107</a></td>
-                <td>321 East St</td>		
-                <td>Springfield</td><td>NJ</td><td>07081</td>
-                <td><a class="btn" href="#">Remove</a></td>
-              </tr>
-              <tr>
-                <td><a html="#">Store #100</a></td>
-                <td>1313 Disneyland Drive</td>		
-                <td>Anaheim</td><td>CA</td><td>92802</td>
-                <td><a class="btn" href="#">Remove</a></td>
-              </tr>
-            </table>
-            <form action="">
-            <fieldset>
-              <legend>New Location</legend>
-                Name:     <input type="text" name="Name" value=""><br>
-                Street:   <input type="text" name="Street1" value="">
-                Street:   <input type="text" name="Street2" value=""><br>
-                Zip Code: <input type="text" name="Zcode" value="">
-                State:    <input type="text" name="Zcode" value="">
-              </fieldset>
-            </form
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Search Locations
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <form action=""> Search Locations: <input type="text" name="srchbx" value=""><input type="submit" value="Submit"></form>
+                    <table id="t01" style="width:100%">
+                    <caption>Search Results</caption>
+                      <tr>
+                        <th>Name</th> <th>Address</th><th>City</th><th>State</th><th>Zip Code</th>
+                      </tr>
+                      <tr>
+                        <td><a html="#">Store #104</a></td>
+                        <td>123 Main, Ste 200</td>		
+                        <td>NY</td><td>NY</td><td>10001</td>
+                        <td><a class="btn" href="#">Remove</a></td>
+                      </tr>
+                      <tr>
+                        <td><a html="#">Store #107</a></td>
+                        <td>321 East St</td>		
+                        <td>Springfield</td><td>NJ</td><td>07081</td>
+                        <td><a class="btn" href="#">Remove</a></td>
+                      </tr>
+                      <tr>
+                        <td><a html="#">Store #100</a></td>
+                        <td>1313 Disneyland Drive</td>		
+                        <td>Anaheim</td><td>CA</td><td>92802</td>
+                        <td><a class="btn" href="#">Remove</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Location Details
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                      <div class="span 11">
+                        <table id="t01" style="width:100%">
+                          <caption>Store #104 Order History</caption>
+                          <tr>
+                            <th>Order Number</th><th>Status</th><th>Pieces</th><th>Quantity</th>
+                            <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th>
+                          </tr>
+                          <tr>
+                            <td>1234zxcv</td> <td>Delivered</td><td>2</td><td>800</td>
+                            <td>1/1/2013</td><td>1/1/2013</td><td>1/2/2013<td>
+                          </tr>
+                          <tr>
+                            <td>2345sdfg</td><td>Approved</td><td>4</td><td>650</td>
+                            <td>12/1/2014</td><td>1/1/2015</td><td></td>
+                          </tr>
+                          <tr>
+                            <td>4576xcfg</td><td>Waiting for Approval</td><td>1</td><td>105</td>
+                            <td>1/5/2015</td><td></td><td></td>
+                          </tr>
+                        </table>
+                        <br><br>
+                    </div><!--/span-->
+                    <div class="span 11">
+                        <table id="t01" style="width:60%">
+                            <caption>Store #104 Employees</caption>
+                            <tr>
+                              <th>Name</th><th>Role</th>
+                            </tr>
+                            <tr>
+                              <td>Joe Smith</td><td>Agent</td> 
+                            </tr>
+                            <tr>
+                              <td>Roy White</td><td>Approver</td> 
+                            </tr>
+                            <tr>
+                              <td>Paul Brown</td><td>Corporate-Approver</td> 
+                            </tr>
+                        </table>
+                        <br><br>
+                    </div><!--/row-->
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      New Location
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <form action="">
+                      <fieldset>
+                        Name:     <input type="text" name="Name" value=""><br>
+                        Street:   <input type="text" name="Street1" value="">
+                        Street:   <input type="text" name="Street2" value=""><br>
+                        Zip Code: <input type="text" name="Zcode" value="">
+                        State:    <input type="text" name="Zcode" value="">
+                      </fieldset>
+                    </form       
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div><!--/unit--> 
-        </div><!--/span-->
-        <div class="row-fluid">
-            <div class="span11">
-              <caption>Store #104 Order History</caption>
-              <table id="t01" style="width:100%">
-                <tr>
-                  <th>Order Number</th><th>Status</th><th>Pieces</th><th>Quantity</th>
-                  <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th>
-                </tr>
-                <tr>
-                  <td>1234zxcv</td> <td>Delivered</td><td>2</td><td>800</td>
-                  <td>1/1/2013</td><td>1/1/2013</td><td>1/2/2013<td>
-                </tr>
-                <tr>
-                  <td>2345sdfg</td><td>Approved</td><td>4</td><td>650</td>
-                  <td>12/1/2014</td><td>1/1/2015</td><td></td>
-                </tr>
-                <tr>
-                  <td>4576xcfg</td><td>Waiting for Approval</td><td>1</td><td>105</td>
-                  <td>1/5/2015</td><td></td><td></td>
-                </tr>
-              </table>
-            </div><!--/span-->
-          </div><!--/row-->
-           <div class="row-fluid">
-            <br>
-           </div><!--/row-->
       </div><!--/row-->
       <hr>
       <footer>
