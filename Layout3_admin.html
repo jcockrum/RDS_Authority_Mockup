@@ -16,6 +16,18 @@
       /* Enable use of floated navbar text */
       .navbar-text.pull-right{float:none;padding-left:5px;padding-right:5px;}
       }
+      
+      fieldset { border: 2px groove}
+      
+      table#t01, th, td {
+      border: 1px solid black;
+      }
+      table#t01 tr:nth-child(even) {
+      background-color: #eee;
+      }
+      table#t01 tr:nth-child(odd) {
+      background-color: #fff;
+      }
     </style>
     <link href="C:\Users\Tegan\Code\Roplast\Screen_mockups\RDS_Authority_Mockup\Layout3.css" rel="stylesheet">
 
@@ -63,42 +75,72 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3.html">Home</a></li>
-              <li><a href="#">Administration</a></li>
-              <li><a href="#">Orders</a></li>
-              <li><a href="#">Locations</a></li>
+              <li class="nav-header">Menu</li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3.html">Home</a></li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3_admin.html">Administration</a></li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3_orders.html">Orders</a></li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3_locations.html">Locations</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
-          <div class="hero-unit">
-            <h1>RDS Authority</h1>
-            <p></p>
-            
-            <p><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3-about.html" class="btn btn-primary btn-large">Learn more »</a></p>
-          </div>
+        <div class="hero-unit">
+         <form action="">
+            Search Users: <input type="text" name="srchbx" value="">
+            <input type="submit" value="Submit">
+          </form>
+          <table id="t01" style="width:100%">
+          <tr>
+            <th>Name</th>
+            <th>Location</th>		
+            <th>Role</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Jill Smith</td>
+            <td><a html="#">Store #104</a></td>		
+            <td>Agent</td>
+            <td><a class="btn" href="#">Remove</a></td>
+          </tr>
+          <tr>
+            <td>Eve Jackson</td>
+            <td><a html="#">West Coast</a></td>		
+            <td>Corporate-Approver</td>
+            <td><a class="btn" href="#">Remove</a></td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td><a html="#">New York</a></td>		
+            <td>Approver</td>
+            <td><a class="btn" href="#">Remove</a></td>
+          </tr>
+          </table>
+          <form action="">
+          <fieldset>
+            <legend>New User</legend>
+
+              First name: <input type="text" name="FirstName" value="">
+              Last name: <input type="text" name="LastName" value=""><br>
+              Location: <select name="locations">
+                <option value="Store #104">Store #104</option>
+                <option value="Store #105">Store #105</option>
+                <option value="Store #106">Store #106</option>
+                <option value="Store #107">Store #107</option>
+              </select>
+              Role: <select name="roles">
+                <option value="Administrator">Administrator</option>
+                <option value="Corporate-Approver">Corporate-Approver</option>
+                <option value="Approver">Approver</option>
+                <option value="Agent">Agent</option>
+              </select><br>
+              <input type="submit" value="Submit">
+          </fieldset>
+          </form>
+         </div>
           <div class="row-fluid">
-            <div class="span4">
-              <h2>TDS Shopping Bag</h2>
-              <p><img src="C:\Users\Tegan\Code\Roplast\Screen_mockups\RDS_Authority_Mockup\Img\TDSSB1.jpg" alt="TDS Shopping Bag" 
-                  height="300" width="300"></p>
-              <p><a class="btn" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>TDS Shopping Bag</h2>
-              <p><img src="C:\Users\Tegan\Code\Roplast\Screen_mockups\RDS_Authority_Mockup\Img\TDSSB2.jpg" alt="TDS Shopping Bag"
-                  height="300" width="300"></p>
-              <p><a class="btn" href="#">View details »</a></p>
-            </div><!--/span-->
           </div><!--/row-->
-          <div class="row-fluid">
-          </div><!--/row-->
-        </div><!--/span-->
       </div><!--/row-->
-
       <hr>
-
       <footer>
         <p>©Roplast Industries Inc 2015</p>
       </footer>

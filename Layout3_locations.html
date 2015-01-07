@@ -16,6 +16,17 @@
       /* Enable use of floated navbar text */
       .navbar-text.pull-right{float:none;padding-left:5px;padding-right:5px;}
       }
+       fieldset { border: 2px groove}
+      
+      table#t01, th, td {
+      border: 1px solid black;
+      }
+      table#t01 tr:nth-child(even) {
+      background-color: #eee;
+      }
+      table#t01 tr:nth-child(odd) {
+      background-color: #fff;
+      }
     </style>
     <link href="C:\Users\Tegan\Code\Roplast\Screen_mockups\RDS_Authority_Mockup\Layout3.css" rel="stylesheet">
 
@@ -49,7 +60,7 @@
               Logged in as <a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3-auth.html" class="navbar-link">Username</a>
             </p>
             <ul class="nav">
-              <li class="active"><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3.html">Home</a></li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3.html">Home</a></li>
               <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3-about.html">About</a></li>
               <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3_cont.html">Contact</a></li>
             </ul>
@@ -63,42 +74,80 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3.html">Home</a></li>
-              <li><a href="#">Administration</a></li>
-              <li><a href="#">Orders</a></li>
-              <li><a href="#">Locations</a></li>
+              <li class="nav-header">Menu</li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3.html">Home</a></li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3_admin.html">Administration</a></li>
+              <li><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3_orders.html">Orders</a></li>
+              <li class="active"><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3_locations.html">Locations</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
-            <h1>RDS Authority</h1>
-            <p></p>
-            
-            <p><a href="file:///C:/Users/Tegan/Code/Roplast/Screen_mockups/RDS_Authority_Mockup/Layout3-about.html" class="btn btn-primary btn-large">Learn more »</a></p>
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>TDS Shopping Bag</h2>
-              <p><img src="C:\Users\Tegan\Code\Roplast\Screen_mockups\RDS_Authority_Mockup\Img\TDSSB1.jpg" alt="TDS Shopping Bag" 
-                  height="300" width="300"></p>
-              <p><a class="btn" href="#">View details »</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>TDS Shopping Bag</h2>
-              <p><img src="C:\Users\Tegan\Code\Roplast\Screen_mockups\RDS_Authority_Mockup\Img\TDSSB2.jpg" alt="TDS Shopping Bag"
-                  height="300" width="300"></p>
-              <p><a class="btn" href="#">View details »</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-          </div><!--/row-->
+            <form action=""> Search Locations: <input type="text" name="srchbx" value=""><input type="submit" value="Submit"></form>
+            <table id="t01" style="width:100%">
+              <tr>
+                <th>Name</th> <th>Address</th><th>City</th><th>State</th><th>Zip Code</th>
+              </tr>
+              <tr>
+                <td><a html="#">Store #104</a></td>
+                <td>123 Main, Ste 200</td>		
+                <td>NY</td><td>NY</td><td>10001</td>
+                <td><a class="btn" href="#">Remove</a></td>
+              </tr>
+              <tr>
+                <td><a html="#">Store #107</a></td>
+                <td>321 East St</td>		
+                <td>Springfield</td><td>NJ</td><td>07081</td>
+                <td><a class="btn" href="#">Remove</a></td>
+              </tr>
+              <tr>
+                <td><a html="#">Store #100</a></td>
+                <td>1313 Disneyland Drive</td>		
+                <td>Anaheim</td><td>CA</td><td>92802</td>
+                <td><a class="btn" href="#">Remove</a></td>
+              </tr>
+            </table>
+            <form action="">
+            <fieldset>
+              <legend>New Location</legend>
+                Name:     <input type="text" name="Name" value=""><br>
+                Street:   <input type="text" name="Street1" value="">
+                Street:   <input type="text" name="Street2" value=""><br>
+                Zip Code: <input type="text" name="Zcode" value="">
+                State:    <input type="text" name="Zcode" value="">
+              </fieldset>
+            </form
+          </div><!--/unit--> 
         </div><!--/span-->
+        <div class="row-fluid">
+            <div class="span11">
+              <caption>Store #104 Order History</caption>
+              <table id="t01" style="width:100%">
+                <tr>
+                  <th>Order Number</th><th>Status</th><th>Pieces</th><th>Quantity</th>
+                  <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th>
+                </tr>
+                <tr>
+                  <td>1234zxcv</td> <td>Delivered</td><td>2</td><td>800</td>
+                  <td>1/1/2013</td><td>1/1/2013</td><td>1/2/2013<td>
+                </tr>
+                <tr>
+                  <td>2345sdfg</td><td>Approved</td><td>4</td><td>650</td>
+                  <td>12/1/2014</td><td>1/1/2015</td><td></td>
+                </tr>
+                <tr>
+                  <td>4576xcfg</td><td>Waiting for Approval</td><td>1</td><td>105</td>
+                  <td>1/5/2015</td><td></td><td></td>
+                </tr>
+              </table>
+            </div><!--/span-->
+          </div><!--/row-->
+           <div class="row-fluid">
+            <br>
+           </div><!--/row-->
       </div><!--/row-->
-
       <hr>
-
       <footer>
         <p>©Roplast Industries Inc 2015</p>
       </footer>
