@@ -100,21 +100,22 @@
                   <caption>Search Result: Store #104</caption>
                   <tr>
                     <th>Order Number</th><th>Status</th><th>Pieces</th><th>Quantity</th>
-                    <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th><th>Action</th>
+                    <th>Date Ordered</th><th>Date Approved</th><th>Date Delivered</th>
+                    <th>Expedited</th><th>Action</th>
                   </tr>
                   <tr>
                     <td>1234zxcv</td> <td>Delivered</td><td>2</td><td>800</td>
-                    <td>1/1/2013</td><td>1/1/2013</td><td>1/2/2013<td>
+                    <td>1/1/2013</td><td>1/1/2013</td><td>1/2/2013</td><td>Y</td>
                     
                   </tr>
                   <tr>
                     <td>2345sdfg</td><td>Approved</td><td>4</td><td>650</td>
-                    <td>12/1/2014</td><td>1/1/2015</td><td></td>
+                    <td>12/1/2014</td><td>1/1/2015</td><td></td><td>N</td>
                     <td><a class="btn" href="#">Revoke</a></td>
                   </tr>
                   <tr>
                     <td>4576xcfg</td><td>Waiting for Approval</td><td>1</td><td>105</td>
-                    <td>1/5/2015</td><td></td><td></td>
+                    <td>1/5/2015</td><td></td><td></td><td>Y</td>
                     <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
                   </tr>
                 </table>
@@ -134,20 +135,22 @@
               <div class="panel-body">
                 <form action="">
                 <fieldset>
-                  <legend>Create Order</legend>
-                  Print Title<br>
+                  Characters<br>
                   <img src="Img\TDSSB1.jpg" alt="TDS Shopping Bag" height="150" width="150">
                   Quantity (up to 500):
                   <input type="number" name="quantity" max="500">
                   <br><br>
-                  Print Title<br>
+                  Marvel & Star Wars<br>
                   <img src="Img\TDSSB2.jpg" alt="TDS Shopping Bag" height="150" width="150">
                   Quantity (up to 500):
                   <input type="number" name="quantity" max="500">
+                  <br />
+                  <input type="checkbox" name="Expedited" value="Expedited" />Request Expedited Delivery 
                   <br><br>
                   <input type="submit" value="Submit">
                 </fieldset>
                 </form>
+                <p>For Expedited Delivery, it will be calculated at the time the order is submitted, and if it passes the expidite request will show on the approval request.
               </div>
             </div>
           </div>
@@ -188,6 +191,8 @@
                     <td><a class="btn" href="#">Approve</a><a class="btn" href="#">Revoke</a></td>
                   </tr>
                 </table>
+                <p> For Approvers with outstanding approvals, the system can bundle them and send them to their owner on a periodic basis.
+                </p>
                 <br><br>
               </div>
             </div>
@@ -196,9 +201,7 @@
       </div>
     </div><!--/span-->
   </div><!--/row-->
-
       <hr>
-
       <footer>
         <p>©Roplast Industries Inc 2015</p>
       </footer>
